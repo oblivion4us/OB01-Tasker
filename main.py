@@ -5,3 +5,4 @@ class Task():
         self.status = status
 
     def add_new_task(self):
+        pass
