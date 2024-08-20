@@ -30,3 +30,13 @@ class Task:
         for task in pending_tasks:
             due_date = task['due_date']
             print(f"Задача: {task['description']}. Срок: {due_date}")
+
+task1 = Task("Первая задача", "01.01.2024")
+# Добавляем задачи
+task1.add_task("Купить книгу", "05.10.2024")
+task1.add_task("Сделать домашнюю работу", "20.08.2024")
+
+task1.get_pending_tasks()
+task1.mark_task_completed("Сделать домашнюю работу")
+
+task1.get_pending_tasks()
